@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.page_ctn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25%;
+  height: 100vh;
+}
+
+.main_table{
+  border: 3px solid #369;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+.main_table thead{
+  background-color: #369;
+  padding: 5px;
+  height: 20px;
+}
+
+
+.main_table td,tr{
+  padding: 3px;
+  text-align: center;
+  font-family: Arial;
+  font-size: 100%;
+}
+
+.main_table tr:hover{
+ background-color: #369;
+ cursor: pointer;
+}

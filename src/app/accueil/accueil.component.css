@@ -1,0 +1,9 @@
+.accueil_ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.accueil_ctn img{
+transform: scale(0.6);
+}

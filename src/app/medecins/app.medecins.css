@@ -1,0 +1,113 @@
+.medecins_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.medecins_left_ctn{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.medecins_right_ctn{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#medecin_search {
+  width: 70%;
+  padding: 10px;
+  font-family: Arial;
+  font-size: 100%;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.navbar_medecins {
+  width: 60%;
+  border-radius: 20px;
+  background-color: #369;
+  color: white;
+  padding: 10px;
+  border: 2px solid #100;
+  margin-top: 10px;
+}
+
+
+.navbar_medecins p {
+  margin-top: 5px;
+  font-family: Arial;
+  font-size: 100%;
+}
+
+
+.navbar_medecins div{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar_medecins button{
+ padding: 10px;
+ border: 1px solid black;
+}
+
+.medecins_container label[for="medecin_search"] {
+  color: #100;
+  font-family: Arial;
+  font-size: 100%;
+  margin: 50px 20px;
+  margin-bottom: 5px;
+}
+
+.list-title{
+  background-color: white;
+}
+
+.medecins_table{
+  margin-top: 10px;
+}
+/*
+.medecin_list {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #369;
+  margin-top: 20px;
+}
+
+.medecin_list ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.medecin_list ul li {
+  width: 100%;
+  margin-left: -38px;
+  color: #100;
+  font-family: Arial;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.medecin_list ul li:hover {
+  cursor: pointer;
+  background-color: white;
+} */

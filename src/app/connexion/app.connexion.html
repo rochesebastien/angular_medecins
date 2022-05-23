@@ -1,0 +1,18 @@
+<my-navbar></my-navbar>
+<div class="page_ctn">
+  <h1>
+    {{titre}}
+  </h1>
+  <div class="main_connexion_ctn">
+    <form name="frmLogin" (ngSubmit)="valider()">
+      <span>{{titre}}</span>
+      <input type="text" name="lg" [(ngModel)]="login">
+      <span>Mot de passe</span>
+      <input type="password" name="lmdp" [(ngModel)]="mdp">
+      <input type="submit" value="Valider">
+      <p>Identifiant : {{login}}</p>
+    </form>
+    <div class="alert-danger" [hidden]="estCache">{{lblMessage}} </div>
+  </div>
+</div>
+

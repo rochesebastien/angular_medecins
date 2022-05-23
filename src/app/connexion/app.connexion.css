@@ -1,0 +1,77 @@
+
+.main_connexion_ctn{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_connexion_ctn h1 {
+  color:#100;
+  font-family: Arial;
+  font-size:200%;
+}
+
+.main_connexion_ctn form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_connexion_ctn form input{
+  width: 20%;
+  padding: 10px;
+  font-family: Arial;
+  font-size: 100%;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.main_connexion_ctn form span{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-family: Arial;
+  font-size: 100%
+}
+
+.main_connexion_ctn form input[type="submit"]{
+  width: 20%;
+  padding: 10px;
+  font-family: Arial;
+  font-size: 100%;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background: #369;
+  transition: 0.2s;
+}
+
+.main_connexion_ctn form input[type="submit"]:hover{
+  border: 2px solid black;
+  background: white;
+  color:black;
+  transition: 0.2s;
+}
+
+.main_connexion_ctn form p{
+  color: #369;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+}
+
+.alert-danger{
+  text-align: center;
+  line-height:50px;
+  margin:0 auto;
+  width:25%;
+  height:50px;
+  background: rgb(226, 103, 103);
+  color:black;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 125%;
+  border-radius: 20px;
+}

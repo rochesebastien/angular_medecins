@@ -1,0 +1,65 @@
+<my-navbar></my-navbar>
+<div class="page_ctn">
+  <div class="medecins_container">
+    <div class="medecins_left_ctn">
+      <label for="medecin_search">Rechercher le médecin</label>
+      <input id="medecin_search" type="search" placeholder="Nom du médecin" [(ngModel)]="nomMedecin" (keyup)="charger()">
+
+      <div class="navbar_medecins" [hidden]="estCacheMenu">
+        <div>
+          <button (click)="derniersRapports(id)">Derniers rapports</button>
+          <button (click)="majMedecin()">Mise à jour</button>
+        </div>
+        <p>Informations sur le medecin sélectionné :</p>
+        <p>Nom : {{medecin}}</p>
+        <p>Tel : {{tel}}</p>
+        <p>Numéro de Département : {{departement}}</p>
+    </div>
+
+
+    <div class="navbar_medecins" [hidden]="estCacheMenu">
+      <table *ngIf="lesRapports" class="main_table medecins_table">
+        <thead>
+          <th>Date</th>
+          <th>Motif</th>
+          <th>Bilan</th>
+          <th>Nom du visiteur</th>
+        </thead>
+        <tr *ngFor="let rapport of lesRapports">
+          <td>{{rapport.date}}</td>
+          <td>{{rapport.motif}}</td>
+          <td>{{rapport.bilan}}</td>
+          <td>{{rapport.nom}}</td>
+        </tr>
+      </table>
+  </div>
+  </div>
+
+    <div class="medecins_right_ctn">
+      <table *ngIf="lesMedecins" class="main_table medecins_table">
+        <thead>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Département</th>
+        </thead>
+        <tr *ngFor="let medecin of lesMedecins"
+        (click)="selectionner(medecin)">
+          <td>{{medecin.nom}}</td>
+          <td>{{medecin.prenom}}</td>
+          <td>{{medecin.departement}}</td>
+        </tr>
+      </table>
+    </div>
+
+
+
+
+
+
+    </div>
+
+    <!-- <input type="text" value="{{medecin.nom}}">
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <input type="text">
+      <input type="text"> -->
+  </div>
